@@ -215,6 +215,10 @@ a:visited {
     z-index: 9;
 }
 
+.main-nav-content {
+    display: contents;
+}
+
 .nav-list {
     list-style: none;
     padding: 0;
