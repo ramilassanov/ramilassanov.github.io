@@ -570,6 +570,28 @@ position: absolute;
     background-color: #191b1bba;
 }
 
+@media (max-width: 768px) {
+.overlay_qarafest, 
+.overlay_covid,
+.overlay_nextstopalmaty,
+.overlay_ecom,
+.overlay_resort,
+.overlay_todolist,
+.overlay_colorgame,
+.overlay_bangkok{
+position: absolute;
+    top: 8px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 94.5%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #191b1bba;
+}
+}
+
 .overlay_qarafest:hover {
   opacity: 1;
 }
