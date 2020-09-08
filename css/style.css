@@ -549,6 +549,83 @@ a:visited {
 
 /*---------- Portfolio ----------*/
 
+.overlay_qarafest, 
+.overlay_covid,
+.overlay_nextstopalmaty,
+.overlay_ecom,
+.overlay_resort,
+.overlay_todolist,
+.overlay_colorgame,
+.overlay_bangkok
+{
+position: absolute;
+    top: 8px;
+    bottom: 0;
+    left: 8px;
+    right: 0;
+    height: 94.5%;
+    width: 95%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #191b1bba;
+}
+
+.overlay_qarafest:hover {
+  opacity: 1;
+}
+
+.overlay_covid:hover {
+  opacity: 1;
+}
+.overlay_nextstopalmaty:hover {
+  opacity: 1;
+}
+.overlay_ecom:hover {
+  opacity: 1;
+}
+.overlay_resort:hover {
+  opacity: 1;
+}
+.overlay_todolist:hover {
+  opacity: 1;
+}
+.overlay_colorgame:hover {
+  opacity: 1;
+}
+.overlay_bangkok:hover {
+  opacity: 1;
+}
+
+
+.text_qarafest, 
+.text_covid, 
+.text_nextstopalmaty,
+.text_ecom,
+.text_resort,
+.text_todolist,
+.text_colorgame,
+.text_bangkok
+{
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+      border: 1px solid #cccccc6e;
+    padding: 10px;
+}
+
+hr{
+        margin-top: 0px;
+    margin-bottom: 0px;
+    border: 0;
+    border-top: 1px solid #a5a1a1ba;
+}
+
 #portfolio {
     padding-top: 185px;
 }
@@ -587,9 +664,9 @@ a:visited {
     background-color: rgb(51, 44, 44);
 } */
 
-.background-image:hover {
+/* .background-image:hover {
     opacity: 0.8;
-}
+} */
 
 .square-thumbs li {
     height: 285px;
@@ -620,10 +697,10 @@ a:visited {
     font-family: 'Open Sans', sans-serif;
 }
 
-.portfolio-sorting li a:hover,
+/* .portfolio-sorting li a:hover,
 .portfolio-sorting li a.active {
     border-bottom: 2px solid #222;
-}
+} */
 
 .portfolio-item {
     margin-bottom: 30px;
