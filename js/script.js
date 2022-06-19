@@ -11,7 +11,7 @@ $(window).load(function() {
 
 var shuffleme = (function( $ ) {
   'use strict';
-  var $grid = $('#grid'), //locate what we want to sort 
+  var $grid = $('#grid'), //locate what we want to sort
       $filterOptions = $('.portfolio-sorting li'),  //locate the filter categories
       $sizer = $grid.find('.shuffle_sizer'),    //sizer stores the size of the items
 
@@ -26,11 +26,11 @@ var shuffleme = (function( $ ) {
     // instantiate the plugin
     $grid.shuffle({
       itemSelector: '[class*="col-"]',
-      sizer: $sizer    
+      sizer: $sizer
     });
   },
 
-      
+
 
 // Set up button clicks
   setupFilters = function() {
@@ -84,7 +84,7 @@ var shuffleme = (function( $ ) {
     setTimeout(function() {
       debouncedLayout();
     }, 500);
-  };      
+  };
 
   return {
     init: init
@@ -97,5 +97,31 @@ $(document).ready(function()
 });
 
 
- 
 
+
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
